@@ -8,11 +8,11 @@ import os
 
 
 def get_glfw_dll():
-    return os.path.join(os.path.dirname(glfw_path), 'glfw3.dll')
+    return os.path.join(os.path.dirname(glfw_path), 'x11/libglfw.so')
 
 
 a = Analysis(
-    ['src\\OpenRadar.py'],
+    ['src/OpenRadar.py'],
     pathex=[],
     binaries=[
         (get_glfw_dll(), '.'),

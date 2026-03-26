@@ -89,7 +89,7 @@ class App:
         glfw.init()
         self.clock = Clock()
         glfw.set_error_callback(self.handle_error)
-        window_icon = Image.open(from_path(config.bundle_dir / "resources/icons/OpenRadaricon.png"))
+        window_icon = Image.open(from_path(config.bundle_dir / "resources/icons/OpenRadarIcon.png"))
 
         # Set window hints for initial position (Hide the window initially before setting position)
         glfw.window_hint(glfw.VISIBLE, glfw.FALSE)

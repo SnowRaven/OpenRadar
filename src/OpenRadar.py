@@ -1,6 +1,6 @@
 import sys
 import argparse
-import os
+#import os
 import logging
 from pathlib import Path
 
@@ -12,7 +12,7 @@ from app import App
 def main():
     # Parse arguments first to check for debug flag
     parser = argparse.ArgumentParser(prog='OpenRadar', description='TacView realtime telemetry radar tool')
-    test_ini_path = os.path.join(os.getcwd(), 'Data', 'test.ini')
+    test_ini_path = None
     parser.add_argument('-i', '--ini', nargs='?', const=test_ini_path, default=None, help='Load a test ini file.')
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
     parser.add_argument('--log-file', action='store_true', help='Log to file instead of stdout')
